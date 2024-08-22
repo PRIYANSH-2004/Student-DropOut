@@ -1,0 +1,32 @@
+/* Sidebar.css */
+
+.sidebar {
+  position: fixed; /* Keeps the sidebar fixed on the left side */
+  top: 10;
+  bottom: 10;
+  left: 1000;
+  width: 250px; /* Adjust width as needed */
+  height: 100%; /* Full height */
+  background-color: #9b1818; /* Light background color */
+  padding: 10px; /* Padding inside the sidebar */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual separation */
+  z-index: 1000; /* Ensures the sidebar is above other content */
+  
+  /* margin-bottom: 100px; */
+}
+
+.sidebar h2 {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  margin-bottom: 10px; /* Margin below the heading */
+}
+
+.chart-container {
+  margin-top: 20px; /* Space above the chart */
+}
+
+/* Optional: Adjust layout if needed for responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Adjust width for smaller screens */
+  }
+}

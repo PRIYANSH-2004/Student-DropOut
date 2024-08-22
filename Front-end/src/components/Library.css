@@ -1,0 +1,17 @@
+.library-container {
+    padding: 20px;
+  }
+  
+  .library-content h3 {
+    margin-top: 20px;
+  }
+  
+  .library-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .library-content li {
+    margin: 5px 0;
+  }
+  

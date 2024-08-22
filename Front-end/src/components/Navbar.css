@@ -1,0 +1,47 @@
+/* Ensure the Navbar spans across the top and has a dark background */
+.navbar {
+  background-color: #343a40; /* Changed to dark background */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  text-decoration-color: brown;
+}
+
+/* Style for the brand/title on the left side */
+.navbar-brand {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center; /* Align the image with the text */
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+/* Style for the navigation links */
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px; /* Adjusted gap between links */
+}
+
+/* Add margin to the "Students" link */
+.navbar-nav li:first-child {
+  margin-left: 800px; /* Reduced margin-left to better align with the layout */
+}
+
+/* Individual link styles */
+.navbar-nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Hover effect for links */
+.navbar-nav li a:hover {
+  color: #ddd;
+}

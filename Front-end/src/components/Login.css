@@ -1,0 +1,107 @@
+/* src/components/Login.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #e0eafc, #cfdef3); /* Softer gradient */
+  padding: 20px; /* Added padding for better mobile view */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Increased gap for better spacing */
+  width: 100%;
+  max-width: 350px; /* Added max-width for responsive design */
+  background: #ffffff;
+  padding: 2.5rem; /* Increased padding for better spacing */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+}
+
+.login-form h2 {
+  margin-bottom: 1.5rem; /* Increased spacing under the title */
+  font-size: 1.75rem; /* Slightly larger font size */
+  color: #333;
+  text-align: center; /* Centered title */
+  font-family: 'Arial', sans-serif; /* Improved font readability */
+}
+
+/* Styling for labels of the input fields */
+.login-form label {
+  font-size: 1rem;
+  color: black; /* Solid black color for the labels */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Input fields styling */
+.login-form input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd; /* Lighter border color */
+  border-radius: 6px; /* Slightly more rounded corners */
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.login-form input:focus {
+  border-color: #007bff; /* Border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+}
+
+/* Container for buttons */
+.login-buttons {
+  display: flex;
+  justify-content: space-between; /* Space between buttons */
+  margin-top: 1rem;
+}
+
+/* Button styling */
+.login-form button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold; /* Added boldness for better readability */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  width: 48%; /* Ensure buttons are the same width */
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.login-form button:active {
+  background-color: #004494; /* Darker shade on click */
+  transform: translateY(0); /* Reset lift effect on click */
+}
+
+.login-form a {
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 1rem; /* Added space above link */
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.login-form a:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+    width: 100%; /* Ensure form width fits mobile screens */
+  }
+
+  .login-form h2 {
+    font-size: 1.5rem; /* Adjusted title size for smaller screens */
+  }
+}

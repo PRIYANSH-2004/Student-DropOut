@@ -1,0 +1,83 @@
+/* app.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+#root {
+  height: 100%;
+  display: flex; /* Flex container for the whole app */
+  flex-direction: column;
+}
+
+/* Container to hold both sidebar and main content */
+.app-container {
+  display: flex;
+  flex: 1; /* Takes up remaining height after header */
+}
+
+Sidebar container
+ .sidebar {
+  width: 120px;
+  background-color: #ffffff; /* White background for Sidebar */
+  padding: 20px; 
+  height: 10px; 
+  border-right: 1px solid #ddd;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+  position: fixed; 
+  top: 0; 
+   left: 0; 
+ } 
+
+/* Main dashboard styling */
+.dashboard {
+  flex: 1; /* Takes up remaining space */
+  margin-left: 250px; /* Space for the fixed sidebar */
+  padding: 20px;
+  background-color: #f4f4f4; /* Background color for the dashboard */
+  overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+/* Ensure that the dashboard layout works with the sidebar */
+.dashboard .student-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dashboard .student-profile {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 0 0 250px;
+  box-sizing: border-box;
+}
+
+.dashboard .student-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.dashboard .student-profile h2 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.dashboard .student-profile p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.dashboard .alert-section {
+  margin-top: 10px;
+  font-size: 18px;
+}

@@ -1,0 +1,19 @@
+/* src/components/Profile.css */
+.profile {
+    padding: 20px;
+    margin-right: 20px;
+  }
+  
+  .course-list, .admin-info {
+    margin-top: 20px;
+  }
+  
+  .course-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .course-list li {
+    padding: 5px 0;
+  }
+  

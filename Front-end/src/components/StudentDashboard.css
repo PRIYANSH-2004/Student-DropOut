@@ -1,0 +1,27 @@
+.dashboard {
+    padding: 20px;
+    background-color: red;
+    margin-bottom: 0px;
+    margin-left:1000px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  td {
+    display: flex;
+    align-items: center;
+  }
+  
+  td > svg {
+    margin-left: 10px;
+  }
+  
